@@ -1,0 +1,52 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title "Arduino Uno R4"
+Date "2020-05-08"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2950 1050 1550 750 
+U 5EC6D7FD
+F0 "VOLTAGE CONFLICT MANAGEMENT" 50
+F1 "VOLTAGE_MGMT.sch" 50
+$EndSheet
+$Sheet
+S 950  1050 1550 750 
+U 5EC64FF6
+F0 "DC JACK POWER" 50
+F1 "DC_JACK_POWER.sch" 50
+$EndSheet
+$Sheet
+S 4900 1050 1700 750 
+U 5EC767D4
+F0 "SCK LED" 50
+F1 "SCK_LED.sch" 50
+$EndSheet
+$Sheet
+S 2950 2300 1550 750 
+U 5EC7EF9F
+F0 "ATmega16U SUBSYSTEM" 50
+F1 "ATMEGA16U_SUB.sch" 50
+$EndSheet
+$Sheet
+S 950  2300 1550 750 
+U 5EC7AD45
+F0 "USB SUBSYSTEM" 50
+F1 "USB_SYSTEM.sch" 50
+$EndSheet
+$Sheet
+S 4900 2300 1700 750 
+U 5EC10D8C
+F0 "ATmega328P SUBSYSTEM" 50
+F1 "ATMEGA328P_SUB.sch" 50
+$EndSheet
+$EndSCHEMATC

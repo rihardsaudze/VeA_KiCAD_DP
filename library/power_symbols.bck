@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3V3LDO
+D Power symbol creates a global label with name "3V3LDO"
+K power-flag
+$ENDCMP
+#
+$CMP 5VLDO
+D Power symbol creates a global label with name "5VLDO"
+K power-flag
+$ENDCMP
+#
+$CMP USBVcc
+D Power symbol creates a global label with name "USBVcc"
+K power-flag
+$ENDCMP
+#
+$CMP Vin
+D Power symbol creates a global label with name "Vin"
+K power-flag
+$ENDCMP
+#
+#End Doc Library

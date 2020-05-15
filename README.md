@@ -1,10 +1,15 @@
 # VeA_KiCAD_DP
 
 **ENG:** This is the main repository for my course work project in PCB design.  
-TODO: add more info about the project itself
+Main objective of this course work is to create an Arduino Uno R3 clone/version, that is adjusted and modified for my own needs.
 
 **LAT:** Šī ir mana projekta galvenā repozitorija, kurā tiks veidots kursa darbs "Datorizētā iespiedplašu projektēšanā"  
-TODO: nepieciešams papildināt ar informāciju par izvēlēto darbu
+Kursa darba laikā plānots izveidot Arduino Uno R3 klonu/versiju, pielāgotu un pārveidotu savām vajadzībām.
 		 
 		 
 ***Author/Autors:*** *Rihards*
+
+
+
+**Progress:**  
+-15.05.2020 pabeigta principiālā shēma (finished schematic)
