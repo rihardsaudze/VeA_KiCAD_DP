@@ -21,8 +21,8 @@ AR Path="/5ED66153" Ref="J?"  Part="1"
 AR Path="/5EC7AD45/5ED66153" Ref="J3"  Part="1" 
 F 0 "J3" H 5457 3867 50  0000 C CNN
 F 1 "USB_B" H 5457 3776 50  0000 C CNN
-F 2 "" H 5550 3350 50  0001 C CNN
-F 3 " ~" H 5550 3350 50  0001 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 5550 3350 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2626186.pdf" H 5550 3350 50  0001 C CNN
 	1    5400 3400
 	1    0    0    -1  
 $EndComp
@@ -53,7 +53,7 @@ AR Path="/5EC7D8F4" Ref="R?"  Part="1"
 AR Path="/5EC7AD45/5EC7D8F4" Ref="R9"  Part="1" 
 F 0 "R9" V 6150 3350 50  0000 L CNN
 F 1 "22R" V 6250 3300 50  0000 L CNN
-F 2 "" V 6180 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 3400 50  0001 C CNN
 F 3 "~" H 6250 3400 50  0001 C CNN
 	1    6250 3400
 	0    1    1    0   
@@ -66,7 +66,7 @@ AR Path="/5EC7D8FA" Ref="R?"  Part="1"
 AR Path="/5EC7AD45/5EC7D8FA" Ref="R10"  Part="1" 
 F 0 "R10" V 6350 3450 50  0000 L CNN
 F 1 "22R" V 6250 3400 50  0000 L CNN
-F 2 "" V 6180 3500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 3500 50  0001 C CNN
 F 3 "~" H 6250 3500 50  0001 C CNN
 	1    6250 3500
 	0    1    1    0   
@@ -83,8 +83,8 @@ AR Path="/5EC7D902" Ref="PTC?"  Part="1"
 AR Path="/5EC7AD45/5EC7D902" Ref="PTC1"  Part="1" 
 F 0 "PTC1" V 5900 3200 50  0000 C CNN
 F 1 "MF-MSMF-050-2" V 5866 3200 50  0001 C CNN
-F 2 "" H 6050 3000 50  0001 L CNN
-F 3 "~" H 6000 3200 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 6050 3000 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2264697.pdf" H 6000 3200 50  0001 C CNN
 	1    6000 3200
 	0    1    1    0   
 $EndComp
@@ -96,8 +96,8 @@ AR Path="/5EC7D908" Ref="VR?"  Part="1"
 AR Path="/5EC7AD45/5EC7D908" Ref="VR1"  Part="1" 
 F 0 "VR1" V 5800 3850 50  0000 L CNN
 F 1 "CG0603MLC-05E" V 5900 3600 50  0000 L CNN
-F 2 "" V 5630 3950 50  0001 C CNN
-F 3 "~" H 5700 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 5630 3950 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2360367.pdf" H 5700 3950 50  0001 C CNN
 	1    5700 3950
 	1    0    0    -1  
 $EndComp
@@ -109,8 +109,8 @@ AR Path="/5EC7D90E" Ref="VR?"  Part="1"
 AR Path="/5EC7AD45/5EC7D90E" Ref="VR2"  Part="1" 
 F 0 "VR2" V 6150 4000 50  0000 L CNN
 F 1 "CG0603MLC-05E" V 6250 3750 50  0000 L CNN
-F 2 "" V 5980 4100 50  0001 C CNN
-F 3 "~" H 6050 4100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 5980 4100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2360367.pdf" H 6050 4100 50  0001 C CNN
 	1    6050 4100
 	1    0    0    -1  
 $EndComp
@@ -130,9 +130,9 @@ P 5700 4650
 AR Path="/5EC7D91B" Ref="FB?"  Part="1" 
 AR Path="/5EC7AD45/5EC7D91B" Ref="FB1"  Part="1" 
 F 0 "FB1" H 5837 4696 50  0000 L CNN
-F 1 "BLM21PG2215N1D" H 5837 4605 50  0000 L CNN
-F 2 "" V 5630 4650 50  0001 C CNN
-F 3 "~" H 5700 4650 50  0001 C CNN
+F 1 "BLM21PG221SN1D" H 5837 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 5630 4650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1914683.pdf" H 5700 4650 50  0001 C CNN
 	1    5700 4650
 	1    0    0    -1  
 $EndComp
@@ -167,4 +167,16 @@ Wire Wire Line
 	5700 3200 5850 3200
 Wire Wire Line
 	5400 3800 5400 4900
+$Comp
+L power:GNDREF #PWR025
+U 1 1 5EC456E5
+P 5400 4900
+F 0 "#PWR025" H 5400 4650 50  0001 C CNN
+F 1 "GNDREF" H 5405 4727 50  0000 C CNN
+F 2 "" H 5400 4900 50  0001 C CNN
+F 3 "" H 5400 4900 50  0001 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 4900
 $EndSCHEMATC

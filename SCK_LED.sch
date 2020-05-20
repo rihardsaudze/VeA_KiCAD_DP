@@ -19,8 +19,8 @@ U 2 1 5EC7A69E
 P 5750 3700
 F 0 "U1" H 5800 4000 50  0000 C CNN
 F 1 "LMV358" H 5850 3900 50  0000 C CNN
-F 2 "" H 5750 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5750 3700 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5750 3700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2140563.pdf" H 5750 3700 50  0001 C CNN
 	2    5750 3700
 	1    0    0    -1  
 $EndComp
@@ -43,8 +43,8 @@ U 3 1 5EC7A6AB
 P 5750 3700
 F 0 "U4" H 5708 3700 50  0001 L CNN
 F 1 "LMV358" H 5708 3655 50  0001 L CNN
-F 2 "" H 5750 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5750 3700 50  0001 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5750 3700 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2140563.pdf" H 5750 3700 50  0001 C CNN
 	3    5750 3700
 	1    0    0    -1  
 $EndComp
@@ -84,8 +84,8 @@ U 1 1 5EC7A6C1
 P 6300 3900
 F 0 "R4" H 6370 3946 50  0000 L CNN
 F 1 "510R" H 6370 3855 50  0000 L CNN
-F 2 "" V 6230 3900 50  0001 C CNN
-F 3 "~" H 6300 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 3900 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2310790.pdf" H 6300 3900 50  0001 C CNN
 	1    6300 3900
 	1    0    0    -1  
 $EndComp
@@ -95,8 +95,8 @@ U 1 1 5EC7A6C7
 P 6300 4250
 F 0 "D3" V 6339 4133 50  0000 R CNN
 F 1 "SCK_LED" V 6248 4133 50  0000 R CNN
-F 2 "" H 6300 4250 50  0001 C CNN
-F 3 "~" H 6300 4250 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6300 4250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1681524.pdf" H 6300 4250 50  0001 C CNN
 	1    6300 4250
 	0    -1   -1   0   
 $EndComp
@@ -118,10 +118,10 @@ Wire Wire Line
 Text GLabel 5300 3600 0    50   Input ~ 0
 ICSP_SCK
 $Comp
-L power:PWR_FLAG #FLG0101
+L power:PWR_FLAG #FLG04
 U 1 1 5ED9930A
 P 5650 3350
-F 0 "#FLG0101" H 5650 3425 50  0001 C CNN
+F 0 "#FLG04" H 5650 3425 50  0001 C CNN
 F 1 "PWR_FLAG" V 5650 3477 50  0000 L CNN
 F 2 "" H 5650 3350 50  0001 C CNN
 F 3 "~" H 5650 3350 50  0001 C CNN
