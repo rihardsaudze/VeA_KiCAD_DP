@@ -19,35 +19,9 @@ Wire Wire Line
 	3750 3450 3750 3300
 Wire Wire Line
 	3750 3300 3650 3300
-$Comp
-L power_symbols:5VLDO #PWR?
-U 1 1 5EC1A11B
-P 3650 3150
-AR Path="/5EC7EF9F/5EC1A11B" Ref="#PWR?"  Part="1" 
-AR Path="/5EC10D8C/5EC1A11B" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 3650 3000 50  0001 C CNN
-F 1 "5VLDO" H 3667 3323 50  0000 C CNN
-F 2 "" H 3650 3150 50  0001 C CNN
-F 3 "" H 3650 3150 50  0001 C CNN
-	1    3650 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 3150 3650 3300
 Connection ~ 3650 3300
-$Comp
-L power_symbols:5VLDO #PWR?
-U 1 1 5EC1A123
-P 6500 4750
-AR Path="/5EC7EF9F/5EC1A123" Ref="#PWR?"  Part="1" 
-AR Path="/5EC10D8C/5EC1A123" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 6500 4600 50  0001 C CNN
-F 1 "5VLDO" H 6517 4923 50  0000 C CNN
-F 2 "" H 6500 4750 50  0001 C CNN
-F 3 "" H 6500 4750 50  0001 C CNN
-	1    6500 4750
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 5EC1A129
@@ -63,8 +37,6 @@ F 3 "~" H 6900 4900 50  0001 C CNN
 $EndComp
 Text GLabel 7300 5100 2    50   Input ~ 0
 328P_ICSP_MOSI
-Wire Wire Line
-	6500 4750 6500 4800
 Wire Wire Line
 	6500 4800 6600 4800
 Wire Wire Line
@@ -201,7 +173,7 @@ AR Path="/5EC7EF9F/5EC1A1A4" Ref="Y?"  Part="1"
 AR Path="/5EC10D8C/5EC1A1A4" Ref="Y2"  Part="1" 
 F 0 "Y2" V 5796 4531 50  0000 L CNN
 F 1 "16MHz" V 5705 4531 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_MA505-2Pin_12.7x5.1mm" H 5750 4400 50  0001 C CNN
+F 2 "footprints:HC-49S" H 5750 4400 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1497895.pdf" H 5750 4400 50  0001 C CNN
 	1    5750 4400
 	0    1    -1   0   
@@ -244,215 +216,6 @@ F 3 "" H 3650 6600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 6600 3650 6450
-$Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 5EC245DD
-P 4800 3750
-F 0 "J5" H 4850 3750 50  0000 L CNN
-F 1 "0" H 5000 3750 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 3750 50  0001 C CNN
-F 3 "~" H 4800 3750 50  0001 C CNN
-	1    4800 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J6
-U 1 1 5EC24BF8
-P 4800 3850
-F 0 "J6" H 4850 3850 50  0000 L CNN
-F 1 "1" H 5000 3850 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 3850 50  0001 C CNN
-F 3 "~" H 4800 3850 50  0001 C CNN
-	1    4800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J7
-U 1 1 5EC24C86
-P 4800 3950
-F 0 "J7" H 4850 3950 50  0000 L CNN
-F 1 "2" H 5000 3950 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 3950 50  0001 C CNN
-F 3 "~" H 4800 3950 50  0001 C CNN
-	1    4800 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J10
-U 1 1 5EC24DF1
-P 4800 4150
-F 0 "J10" H 4850 4150 50  0000 L CNN
-F 1 "4/MISO" H 5000 4150 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4150 50  0001 C CNN
-F 3 "~" H 4800 4150 50  0001 C CNN
-	1    4800 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J11
-U 1 1 5EC24E7A
-P 4800 4250
-F 0 "J11" H 4850 4250 50  0000 L CNN
-F 1 "5/SCK" H 5000 4250 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4250 50  0001 C CNN
-F 3 "~" H 4800 4250 50  0001 C CNN
-	1    4800 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J12
-U 1 1 5EC28DAE
-P 4800 4650
-F 0 "J12" H 4850 4650 50  0000 L CNN
-F 1 "0" H 5000 4650 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4650 50  0001 C CNN
-F 3 "~" H 4800 4650 50  0001 C CNN
-	1    4800 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J13
-U 1 1 5EC28DB4
-P 4800 4750
-F 0 "J13" H 4850 4750 50  0000 L CNN
-F 1 "1" H 5000 4750 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4750 50  0001 C CNN
-F 3 "~" H 4800 4750 50  0001 C CNN
-	1    4800 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J15
-U 1 1 5EC28DBA
-P 4800 4850
-F 0 "J15" H 4850 4850 50  0000 L CNN
-F 1 "2" H 5000 4850 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4850 50  0001 C CNN
-F 3 "~" H 4800 4850 50  0001 C CNN
-	1    4800 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J18
-U 1 1 5EC28DC0
-P 4800 4950
-F 0 "J18" H 4850 4950 50  0000 L CNN
-F 1 "3" H 5000 4950 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4950 50  0001 C CNN
-F 3 "~" H 4800 4950 50  0001 C CNN
-	1    4800 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J20
-U 1 1 5EC28DC6
-P 4800 5050
-F 0 "J20" H 4850 5050 50  0000 L CNN
-F 1 "4/SDA" H 5000 5050 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5050 50  0001 C CNN
-F 3 "~" H 4800 5050 50  0001 C CNN
-	1    4800 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J22
-U 1 1 5EC28DCC
-P 4800 5150
-F 0 "J22" H 4850 5150 50  0000 L CNN
-F 1 "5/SCL" H 5000 5150 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5150 50  0001 C CNN
-F 3 "~" H 4800 5150 50  0001 C CNN
-	1    4800 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J23
-U 1 1 5EC28DD8
-P 4800 5450
-F 0 "J23" H 4850 5450 50  0000 L CNN
-F 1 "0/RXD" H 5000 5450 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5450 50  0001 C CNN
-F 3 "~" H 4800 5450 50  0001 C CNN
-	1    4800 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J24
-U 1 1 5EC2B9FD
-P 4800 5550
-F 0 "J24" H 4850 5550 50  0000 L CNN
-F 1 "1/TXD" H 5000 5550 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5550 50  0001 C CNN
-F 3 "~" H 4800 5550 50  0001 C CNN
-	1    4800 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J25
-U 1 1 5EC2BA03
-P 4800 5650
-F 0 "J25" H 4850 5650 50  0000 L CNN
-F 1 "2/INT0" H 5000 5650 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5650 50  0001 C CNN
-F 3 "~" H 4800 5650 50  0001 C CNN
-	1    4800 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J26
-U 1 1 5EC2BA09
-P 4800 5750
-F 0 "J26" H 4850 5750 50  0000 L CNN
-F 1 "3/INT1" H 5000 5750 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5750 50  0001 C CNN
-F 3 "~" H 4800 5750 50  0001 C CNN
-	1    4800 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J27
-U 1 1 5EC2BA0F
-P 4800 5850
-F 0 "J27" H 4850 5850 50  0000 L CNN
-F 1 "4" H 5000 5850 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5850 50  0001 C CNN
-F 3 "~" H 4800 5850 50  0001 C CNN
-	1    4800 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J28
-U 1 1 5EC2BA15
-P 4800 5950
-F 0 "J28" H 4850 5950 50  0000 L CNN
-F 1 "5" H 5000 5950 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 5950 50  0001 C CNN
-F 3 "~" H 4800 5950 50  0001 C CNN
-	1    4800 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J29
-U 1 1 5EC2BA1B
-P 4800 6050
-F 0 "J29" H 4850 6050 50  0000 L CNN
-F 1 "6" H 5000 6050 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 6050 50  0001 C CNN
-F 3 "~" H 4800 6050 50  0001 C CNN
-	1    4800 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J30
-U 1 1 5EC2BA21
-P 4800 6150
-F 0 "J30" H 4850 6150 50  0000 L CNN
-F 1 "7" H 5000 6150 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 6150 50  0001 C CNN
-F 3 "~" H 4800 6150 50  0001 C CNN
-	1    4800 6150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 6150 4600 6150
 Wire Wire Line
@@ -470,17 +233,17 @@ Wire Wire Line
 Wire Wire Line
 	4250 5450 4350 5450
 Wire Wire Line
-	4600 5150 4250 5150
+	4800 5150 4250 5150
 Wire Wire Line
-	4250 5050 4600 5050
+	4250 5050 4800 5050
 Wire Wire Line
-	4600 4950 4250 4950
+	4800 4950 4250 4950
 Wire Wire Line
-	4250 4850 4600 4850
+	4250 4850 4800 4850
 Wire Wire Line
-	4600 4750 4250 4750
+	4800 4750 4250 4750
 Wire Wire Line
-	4250 4650 4600 4650
+	4250 4650 4800 4650
 Wire Wire Line
 	4250 4250 4350 4250
 Wire Wire Line
@@ -532,19 +295,6 @@ Wire Wire Line
 	6300 4250 6300 4550
 NoConn ~ 3050 3950
 $Comp
-L Connector_Generic:Conn_01x01 J8
-U 1 1 5ECBC948
-P 2550 4050
-F 0 "J8" H 2600 4050 50  0000 L CNN
-F 1 "7RO" H 2750 4050 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2550 4050 50  0001 C CNN
-F 3 "~" H 2550 4050 50  0001 C CNN
-	1    2550 4050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2750 4050 3050 4050
-$Comp
 L Device:R R?
 U 1 1 5ECC2F14
 P 4600 6350
@@ -572,8 +322,6 @@ F 3 "http://www.farnell.com/datasheets/2310790.pdf" H 4500 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 6450 4750 6450
-Wire Wire Line
-	2750 3750 3050 3750
 Wire Wire Line
 	5750 4800 6050 4800
 Connection ~ 6050 4800
@@ -649,7 +397,7 @@ Wire Wire Line
 	5750 5650 6000 5650
 Connection ~ 5750 5650
 Wire Wire Line
-	4250 5250 5750 5250
+	4250 5250 4300 5250
 Text GLabel 7300 4800 2    50   Input ~ 0
 328P_ICSP_MISO
 Text GLabel 7300 4900 2    50   Input ~ 0
@@ -659,125 +407,15 @@ Wire Wire Line
 Wire Wire Line
 	6550 5100 6550 4900
 $Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 5ED71E26
-P 2550 3750
-F 0 "J4" H 2600 3750 50  0000 L CNN
-F 1 "AREF" H 2750 3750 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2550 3750 50  0001 C CNN
-F 3 "~" H 2550 3750 50  0001 C CNN
-	1    2550 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J16
-U 1 1 5ED78682
-P 2000 4900
-F 0 "J16" H 2050 4900 50  0000 L CNN
-F 1 "5V" H 2200 4900 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2000 4900 50  0001 C CNN
-F 3 "~" H 2000 4900 50  0001 C CNN
-	1    2000 4900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J19
-U 1 1 5ED79250
-P 2000 5000
-F 0 "J19" H 2050 5000 50  0000 L CNN
-F 1 "3V3" H 2200 5000 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2000 5000 50  0001 C CNN
-F 3 "~" H 2000 5000 50  0001 C CNN
-	1    2000 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J21
-U 1 1 5ED7949A
-P 2000 5100
-F 0 "J21" H 2050 5100 50  0000 L CNN
-F 1 "GND" H 2200 5100 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2000 5100 50  0001 C CNN
-F 3 "~" H 2000 5100 50  0001 C CNN
-	1    2000 5100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GNDREF #PWR033
 U 1 1 5ED7B183
-P 2200 5100
-F 0 "#PWR033" H 2200 4850 50  0001 C CNN
-F 1 "GNDREF" H 2205 4927 50  0000 C CNN
-F 2 "" H 2200 5100 50  0001 C CNN
-F 3 "" H 2200 5100 50  0001 C CNN
-	1    2200 5100
+P 2750 4750
+F 0 "#PWR033" H 2750 4500 50  0001 C CNN
+F 1 "GNDREF" H 2755 4577 50  0000 C CNN
+F 2 "" H 2750 4750 50  0001 C CNN
+F 3 "" H 2750 4750 50  0001 C CNN
+	1    2750 4750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J9
-U 1 1 5EC24D53
-P 4800 4050
-F 0 "J9" H 4850 4050 50  0000 L CNN
-F 1 "3/MOSI" H 5000 4050 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 4800 4050 50  0001 C CNN
-F 3 "~" H 4800 4050 50  0001 C CNN
-	1    4800 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J14
-U 1 1 5ED7D95F
-P 2000 4800
-F 0 "J14" H 2050 4800 50  0000 L CNN
-F 1 "Vin" H 2200 4800 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2000 4800 50  0001 C CNN
-F 3 "~" H 2000 4800 50  0001 C CNN
-	1    2000 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L power_symbols:Vin #PWR030
-U 1 1 5ED7DD69
-P 2200 4800
-F 0 "#PWR030" H 2200 4650 50  0001 C CNN
-F 1 "Vin" V 2217 4928 50  0000 L CNN
-F 2 "" H 2200 4800 50  0001 C CNN
-F 3 "" H 2200 4800 50  0001 C CNN
-	1    2200 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L power_symbols:3V3LDO #PWR032
-U 1 1 5ED7A4AE
-P 2200 5000
-F 0 "#PWR032" H 2200 4850 50  0001 C CNN
-F 1 "3V3LDO" V 2217 5128 50  0000 L CNN
-F 2 "" H 2200 5000 50  0001 C CNN
-F 3 "" H 2200 5000 50  0001 C CNN
-	1    2200 5000
-	0    1    1    0   
-$EndComp
-$Comp
-L power_symbols:5VLDO #PWR031
-U 1 1 5ED7A000
-P 2200 4900
-F 0 "#PWR031" H 2200 4750 50  0001 C CNN
-F 1 "5VLDO" V 2217 5028 50  0000 L CNN
-F 2 "" H 2200 4900 50  0001 C CNN
-F 3 "" H 2200 4900 50  0001 C CNN
-	1    2200 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG07
-U 1 1 5ED9C5B4
-P 3650 3300
-F 0 "#FLG07" H 3650 3375 50  0001 C CNN
-F 1 "PWR_FLAG" V 3650 3427 50  0000 L CNN
-F 2 "" H 3650 3300 50  0001 C CNN
-F 3 "~" H 3650 3300 50  0001 C CNN
-	1    3650 3300
-	0    -1   -1   0   
 $EndComp
 $Comp
 L MCU_Microchip_ATmega:ATmega328P-MU U6
@@ -827,4 +465,80 @@ Wire Wire Line
 Connection ~ 5750 4250
 Wire Wire Line
 	6200 4250 6300 4250
+Text GLabel 3650 3150 0    50   Input ~ 0
+5VLDO
+Text GLabel 2300 4550 2    50   Input ~ 0
+5VLDO
+Text GLabel 2300 4950 2    50   Input ~ 0
+Vin
+Text GLabel 2300 4650 2    50   Input ~ 0
+3V3LDO
+Text GLabel 6600 4450 2    50   Input ~ 0
+5VLDO
+Wire Wire Line
+	6500 4450 6600 4450
+Wire Wire Line
+	6500 4450 6500 4800
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5ED374F3
+P 4800 3950
+F 0 "J4" H 4880 3942 50  0000 L CNN
+F 1 "PORTB" H 4880 3851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4800 3950 50  0001 C CNN
+F 3 "~" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J6
+U 1 1 5ED38CB9
+P 5000 4950
+F 0 "J6" H 5080 4992 50  0000 L CNN
+F 1 "PORTC" H 5080 4901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 5000 4950 50  0001 C CNN
+F 3 "~" H 5000 4950 50  0001 C CNN
+	1    5000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J7
+U 1 1 5ED39ECF
+P 4800 5750
+F 0 "J7" H 4880 5742 50  0000 L CNN
+F 1 "PORTD" H 4880 5651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4800 5750 50  0001 C CNN
+F 3 "~" H 4800 5750 50  0001 C CNN
+	1    4800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 5ED3AF24
+P 2100 4750
+F 0 "J5" H 2018 4325 50  0000 C CNN
+F 1 "PWR_PORT" H 2018 4416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2100 4750 50  0001 C CNN
+F 3 "~" H 2100 4750 50  0001 C CNN
+	1    2100 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 5250 4300 5350
+Wire Wire Line
+	4300 5350 5100 5350
+Wire Wire Line
+	5100 5350 5100 5250
+Wire Wire Line
+	5100 5250 5750 5250
+Wire Wire Line
+	2300 4750 2750 4750
+Text GLabel 3050 3750 0    50   Input ~ 0
+AREF
+Text GLabel 2300 4850 2    50   Input ~ 0
+AREF
+Text GLabel 3050 4050 0    50   Input ~ 0
+ADC7
+Text GLabel 4800 5250 0    50   Input ~ 0
+ADC7
 $EndSCHEMATC

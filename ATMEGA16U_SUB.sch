@@ -43,37 +43,13 @@ Wire Wire Line
 	5850 2500 5850 2350
 Wire Wire Line
 	5850 2350 5750 2350
-$Comp
-L power_symbols:5VLDO #PWR018
-U 1 1 5EC8208E
-P 5750 2200
-F 0 "#PWR018" H 5750 2050 50  0001 C CNN
-F 1 "5VLDO" H 5767 2373 50  0000 C CNN
-F 2 "" H 5750 2200 50  0001 C CNN
-F 3 "" H 5750 2200 50  0001 C CNN
-	1    5750 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 2200 5750 2250
 Connection ~ 5750 2350
-$Comp
-L power_symbols:5VLDO #PWR016
-U 1 1 5EC825EF
-P 4200 1950
-F 0 "#PWR016" H 4200 1800 50  0001 C CNN
-F 1 "5VLDO" H 4217 2123 50  0000 C CNN
-F 2 "" H 4200 1950 50  0001 C CNN
-F 3 "" H 4200 1950 50  0001 C CNN
-	1    4200 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5EC84792
 P 3800 2200
 F 0 "J2" H 3850 2517 50  0000 C CNN
-F 1 "ICSP1" H 3850 2426 50  0000 C CNN
+F 1 "ICSP2" H 3850 2426 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3800 2200 50  0001 C CNN
 F 3 "~" H 3800 2200 50  0001 C CNN
 	1    3800 2200
@@ -153,19 +129,6 @@ Wire Wire Line
 Connection ~ 4950 2800
 Wire Wire Line
 	4950 2800 5050 2800
-$Comp
-L power_symbols:USBVcc #PWR017
-U 1 1 5EC8A901
-P 5650 1950
-F 0 "#PWR017" H 5650 1800 50  0001 C CNN
-F 1 "USBVcc" H 5667 2123 50  0000 C CNN
-F 2 "" H 5650 1950 50  0001 C CNN
-F 3 "" H 5650 1950 50  0001 C CNN
-	1    5650 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1950 5650 2150
 Text GLabel 4800 3400 0    50   Input ~ 0
 USB_D+
 Text GLabel 4800 3500 0    50   Input ~ 0
@@ -283,7 +246,7 @@ U 1 1 5EBEEB2A
 P 4250 3100
 F 0 "Y1" V 4296 2969 50  0000 R CNN
 F 1 "16MHz" V 4205 2969 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_MA505-2Pin_12.7x5.1mm" H 4250 3100 50  0001 C CNN
+F 2 "footprints:HC-49S" H 4250 3100 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1497895.pdf" H 4250 3100 50  0001 C CNN
 	1    4250 3100
 	0    -1   -1   0   
@@ -392,26 +355,12 @@ Wire Wire Line
 	7200 4800 7050 4800
 Wire Wire Line
 	7000 4700 6900 4700
-$Comp
-L power_symbols:5VLDO #PWR022
-U 1 1 5EBFF36E
-P 7550 4550
-F 0 "#PWR022" H 7550 4400 50  0001 C CNN
-F 1 "5VLDO" H 7567 4723 50  0000 C CNN
-F 2 "" H 7550 4550 50  0001 C CNN
-F 3 "" H 7550 4550 50  0001 C CNN
-	1    7550 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4550 7550 4700
 Wire Wire Line
 	7550 4700 7300 4700
 Wire Wire Line
 	7500 4800 7550 4800
 Wire Wire Line
 	7550 4800 7550 4700
-Connection ~ 7550 4700
 Wire Wire Line
 	6450 5000 6550 5000
 Text GLabel 6550 5000 2    50   Input ~ 0
@@ -450,20 +399,6 @@ $EndComp
 Connection ~ 5650 2150
 Wire Wire Line
 	5650 2150 5650 2500
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 5ED9A3FF
-P 5750 2250
-F 0 "#FLG06" H 5750 2325 50  0001 C CNN
-F 1 "PWR_FLAG" V 5750 2377 50  0000 L CNN
-F 2 "" H 5750 2250 50  0001 C CNN
-F 3 "~" H 5750 2250 50  0001 C CNN
-	1    5750 2250
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5750 2250
-Wire Wire Line
-	5750 2250 5750 2350
 Wire Wire Line
 	4650 2100 4650 2450
 Wire Wire Line
@@ -473,4 +408,19 @@ Wire Wire Line
 Connection ~ 4650 2100
 Wire Wire Line
 	4900 5400 5650 5400
+Text GLabel 4200 1950 2    50   Input ~ 0
+5VLDO
+Text GLabel 5750 2000 2    50   Input ~ 0
+5VLDO
+Text GLabel 5650 1800 2    50   Input ~ 0
+USBVcc
+Wire Wire Line
+	5650 1800 5650 2150
+Text GLabel 7600 4700 2    50   Input ~ 0
+5VLDO
+Wire Wire Line
+	7550 4700 7600 4700
+Connection ~ 7550 4700
+Wire Wire Line
+	5750 2000 5750 2350
 $EndSCHEMATC

@@ -26,17 +26,6 @@ F 3 "http://www.farnell.com/datasheets/2310790.pdf" H 4300 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 3300 4300 3350
-$Comp
-L power_symbols:Vin #PWR01
-U 1 1 5EC75D75
-P 4300 2900
-F 0 "#PWR01" H 4300 2750 50  0001 C CNN
-F 1 "Vin" H 4317 3073 50  0000 C CNN
-F 2 "" H 4300 2900 50  0001 C CNN
-F 3 "" H 4300 2900 50  0001 C CNN
-	1    4300 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 2900 4300 3000
 Connection ~ 4300 3350
@@ -55,19 +44,6 @@ F 3 "http://www.farnell.com/datasheets/2140563.pdf" H 5150 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 3350 4850 3350
-Wire Wire Line
-	4850 3550 4800 3550
-$Comp
-L power_symbols:3V3LDO #PWR04
-U 1 1 5EC75D86
-P 4800 3550
-F 0 "#PWR04" H 4800 3400 50  0001 C CNN
-F 1 "3V3LDO" V 4850 3500 50  0000 L CNN
-F 2 "" H 4800 3550 50  0001 C CNN
-F 3 "" H 4800 3550 50  0001 C CNN
-	1    4800 3550
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GNDREF #PWR07
 U 1 1 5EC75D8C
@@ -106,19 +82,6 @@ $EndComp
 Wire Wire Line
 	5050 3900 5050 3750
 $Comp
-L power_symbols:5VLDO #PWR02
-U 1 1 5EC75DA0
-P 5050 2900
-F 0 "#PWR02" H 5050 2750 50  0001 C CNN
-F 1 "5VLDO" H 5067 3073 50  0000 C CNN
-F 2 "" H 5050 2900 50  0001 C CNN
-F 3 "" H 5050 2900 50  0001 C CNN
-	1    5050 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5050 2900 5050 3000
-$Comp
 L Transistor_FET:AO3401A Q1
 U 1 1 5EC75DA7
 P 5800 3650
@@ -129,34 +92,12 @@ F 3 "http://www.farnell.com/datasheets/2298381.pdf" H 5800 3650 50  0001 L CNN
 	1    5800 3650
 	0    -1   1    0   
 $EndComp
-$Comp
-L power_symbols:USBVcc #PWR06
-U 1 1 5EC75DAD
-P 5500 3750
-F 0 "#PWR06" H 5500 3600 50  0001 C CNN
-F 1 "USBVcc" H 5517 3923 50  0000 C CNN
-F 2 "" H 5500 3750 50  0001 C CNN
-F 3 "" H 5500 3750 50  0001 C CNN
-	1    5500 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 3750 5600 3750
-$Comp
-L power_symbols:5VLDO #PWR05
-U 1 1 5EC75DB4
-P 6150 3650
-F 0 "#PWR05" H 6150 3500 50  0001 C CNN
-F 1 "5VLDO" H 6167 3823 50  0000 C CNN
-F 2 "" H 6150 3650 50  0001 C CNN
-F 3 "" H 6150 3650 50  0001 C CNN
-	1    6150 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6000 3750 6150 3750
 Wire Wire Line
-	6150 3750 6150 3650
+	6150 3750 6150 3500
 $Comp
 L Regulator_Linear:LP2985-3.3 U2
 U 1 1 5EC75DBC
@@ -205,17 +146,6 @@ F 3 "http://www.farnell.com/datasheets/2739842.pdf" H 7300 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 3800 7300 3750
-$Comp
-L power_symbols:3V3LDO #PWR03
-U 1 1 5EC75DD8
-P 7300 3500
-F 0 "#PWR03" H 7300 3350 50  0001 C CNN
-F 1 "3V3LDO" H 7317 3673 50  0000 C CNN
-F 2 "" H 7300 3500 50  0001 C CNN
-F 3 "" H 7300 3500 50  0001 C CNN
-	1    7300 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 3500 7300 3750
 Connection ~ 7300 3750
@@ -223,8 +153,6 @@ Wire Wire Line
 	5450 3450 5800 3450
 Wire Wire Line
 	6150 3850 6150 3750
-Wire Wire Line
-	6150 3850 6200 3850
 $Comp
 L Device:R R1
 U 1 1 5EC75D68
@@ -238,32 +166,20 @@ F 3 "http://www.farnell.com/datasheets/2310790.pdf" H 4300 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 3750 7300 3750
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5ED979C0
-P 6200 3850
-F 0 "#FLG02" H 6200 3925 50  0001 C CNN
-F 1 "PWR_FLAG" H 6200 4023 50  0000 C CNN
-F 2 "" H 6200 3850 50  0001 C CNN
-F 3 "~" H 6200 3850 50  0001 C CNN
-	1    6200 3850
-	-1   0    0    1   
-$EndComp
-Connection ~ 6200 3850
+Text GLabel 4300 2900 2    50   Input ~ 0
+Vin
+Text GLabel 5050 2900 0    50   Input ~ 0
+5VLDO
+Text GLabel 7300 3500 2    50   Input ~ 0
+3V3LDO
+Text GLabel 4850 3550 0    50   Input ~ 0
+3V3LDO
+Text GLabel 5500 3750 0    50   Input ~ 0
+USBVcc
+Text GLabel 6150 3500 2    50   Input ~ 0
+5VLDO
 Wire Wire Line
-	6200 3850 6300 3850
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5ED98664
-P 5050 3000
-F 0 "#FLG01" H 5050 3075 50  0001 C CNN
-F 1 "PWR_FLAG" V 5050 3128 50  0000 L CNN
-F 2 "" H 5050 3000 50  0001 C CNN
-F 3 "~" H 5050 3000 50  0001 C CNN
-	1    5050 3000
-	0    1    1    0   
-$EndComp
-Connection ~ 5050 3000
+	5050 2900 5050 3150
 Wire Wire Line
-	5050 3000 5050 3150
+	6150 3850 6300 3850
 $EndSCHEMATC

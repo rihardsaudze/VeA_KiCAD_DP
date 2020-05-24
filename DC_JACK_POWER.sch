@@ -17,10 +17,6 @@ Wire Wire Line
 	4050 3500 4200 3500
 Wire Wire Line
 	4200 3500 4200 3600
-Wire Wire Line
-	4050 3300 4150 3300
-Wire Wire Line
-	4650 3300 4550 3300
 Connection ~ 4200 3600
 Wire Wire Line
 	4200 3600 4200 3700
@@ -51,23 +47,8 @@ F 3 "http://www.farnell.com/datasheets/2739842.pdf" H 6250 3450 50  0001 C CNN
 	1    6250 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3300 5850 3300
 Connection ~ 5850 3300
 Connection ~ 5250 3600
-$Comp
-L power_symbols:Vin #PWR?
-U 1 1 5EC7F23B
-P 4650 3100
-AR Path="/5EC7F23B" Ref="#PWR?"  Part="1" 
-AR Path="/5EC64FF6/5EC7F23B" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 4650 2950 50  0001 C CNN
-F 1 "Vin" H 4667 3273 50  0000 C CNN
-F 2 "" H 4650 3100 50  0001 C CNN
-F 3 "" H 4650 3100 50  0001 C CNN
-	1    4650 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 3150 5850 3300
 Wire Wire Line
@@ -84,8 +65,8 @@ U 1 1 5EC6C392
 P 3750 3400
 F 0 "J1" H 3807 3725 50  0000 C CNN
 F 1 "Jack-DC" H 3807 3634 50  0000 C CNN
-F 2 "" H 3800 3360 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/317160.pdf" H 3800 3360 50  0001 C CNN
+F 2 "footprints:DC_Jack" H 3800 3360 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/Prototyping/Barrel-Connector-PJ-202A.pdf" H 3800 3360 50  0001 C CNN
 	1    3750 3400
 	1    0    0    -1  
 $EndComp
@@ -98,28 +79,6 @@ F 1 "GNDREF" H 4205 3527 50  0000 C CNN
 F 2 "" H 4200 3700 50  0001 C CNN
 F 3 "" H 4200 3700 50  0001 C CNN
 	1    4200 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:DIODE D1
-U 1 1 5EC7F236
-P 4350 3300
-F 0 "D1" H 4350 3565 50  0000 C CNN
-F 1 "DIODE" H 4350 3474 50  0000 C CNN
-F 2 "Diode_SMD:D_SMF" H 4350 3300 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2050495.pdf" H 4350 3300 50  0001 C CNN
-	1    4350 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power_symbols:5VLDO #PWR011
-U 1 1 5EC6C3D6
-P 5850 3150
-F 0 "#PWR011" H 5850 3000 50  0001 C CNN
-F 1 "5VLDO" H 5867 3323 50  0000 C CNN
-F 2 "" H 5850 3150 50  0001 C CNN
-F 3 "" H 5850 3150 50  0001 C CNN
-	1    5850 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -202,4 +161,25 @@ $EndComp
 Connection ~ 4800 3600
 Wire Wire Line
 	4800 3600 5250 3600
+$Comp
+L Device:D D1
+U 1 1 5EC8391C
+P 4350 3300
+F 0 "D1" H 4350 3084 50  0000 C CNN
+F 1 "D" H 4350 3175 50  0000 C CNN
+F 2 "Diode_SMD:D_SMF" H 4350 3300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2050495.pdf" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 3300 4200 3300
+Wire Wire Line
+	4500 3300 4650 3300
+Text GLabel 4650 3100 0    50   Input ~ 0
+Vin
+Text GLabel 5850 3150 2    50   Input ~ 0
+5VLDO
+Wire Wire Line
+	5550 3300 5850 3300
 $EndSCHEMATC

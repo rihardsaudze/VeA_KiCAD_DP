@@ -26,23 +26,8 @@ F 3 "http://www.farnell.com/datasheets/2626186.pdf" H 5550 3350 50  0001 C CNN
 	1    5400 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power_symbols:USBVcc #PWR?
-U 1 1 5EC7D8EB
-P 6450 3150
-AR Path="/5EC7D8EB" Ref="#PWR?"  Part="1" 
-AR Path="/5EC7AD45/5EC7D8EB" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 6450 3000 50  0001 C CNN
-F 1 "USBVcc" H 6467 3323 50  0000 C CNN
-F 2 "" H 6450 3150 50  0001 C CNN
-F 3 "" H 6450 3150 50  0001 C CNN
-	1    6450 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 3200 6450 3200
-Wire Wire Line
-	6450 3200 6450 3150
 Wire Wire Line
 	5700 3400 6050 3400
 $Comp
@@ -179,4 +164,6 @@ F 3 "" H 5400 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5400 4900
+Text GLabel 6450 3200 2    50   Input ~ 0
+USBVcc
 $EndSCHEMATC

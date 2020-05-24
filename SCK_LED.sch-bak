@@ -26,43 +26,6 @@ F 3 "http://www.farnell.com/datasheets/2140563.pdf" H 5750 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 3600 5450 3600
-$Comp
-L power_symbols:5VLDO #PWR013
-U 1 1 5EC7A6A5
-P 5650 3300
-F 0 "#PWR013" H 5650 3150 50  0001 C CNN
-F 1 "5VLDO" H 5667 3473 50  0000 C CNN
-F 2 "" H 5650 3300 50  0001 C CNN
-F 3 "" H 5650 3300 50  0001 C CNN
-	1    5650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LMV358 U4
-U 3 1 5EC7A6AB
-P 5750 3700
-F 0 "U4" H 5708 3700 50  0001 L CNN
-F 1 "LMV358" H 5708 3655 50  0001 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5750 3700 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2140563.pdf" H 5750 3700 50  0001 C CNN
-	3    5750 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 3300 5650 3350
-$Comp
-L power:GNDREF #PWR014
-U 1 1 5EC7A6B2
-P 5650 4350
-F 0 "#PWR014" H 5650 4100 50  0001 C CNN
-F 1 "GNDREF" H 5655 4177 50  0000 C CNN
-F 2 "" H 5650 4350 50  0001 C CNN
-F 3 "" H 5650 4350 50  0001 C CNN
-	1    5650 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 4350 5650 4000
 Wire Wire Line
 	5450 3800 5400 3800
 Wire Wire Line
@@ -117,18 +80,4 @@ Wire Wire Line
 	6300 4500 6300 4400
 Text GLabel 5300 3600 0    50   Input ~ 0
 ICSP_SCK
-$Comp
-L power:PWR_FLAG #FLG04
-U 1 1 5ED9930A
-P 5650 3350
-F 0 "#FLG04" H 5650 3425 50  0001 C CNN
-F 1 "PWR_FLAG" V 5650 3477 50  0000 L CNN
-F 2 "" H 5650 3350 50  0001 C CNN
-F 3 "~" H 5650 3350 50  0001 C CNN
-	1    5650 3350
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5650 3350
-Wire Wire Line
-	5650 3350 5650 3400
 $EndSCHEMATC
