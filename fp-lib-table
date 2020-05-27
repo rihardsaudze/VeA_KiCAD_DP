@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name VeA_KiCAD_DP)(type KiCad)(uri ${KIPRJMOD}/footprints.pretty/VeA_KiCAD_DP.pretty)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints.pretty)(options "")(descr ""))
 )
