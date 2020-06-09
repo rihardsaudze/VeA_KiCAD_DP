@@ -1,4 +1,4 @@
-# VeA_KiCAD_DP
+# VeA_KiCAD_R4
 
 **ENG:** This is the main repository for my course work project in PCB design.  
 Main objective of this course work is to create an Arduino Uno R3 clone/version, that is adjusted and modified for my own needs.
