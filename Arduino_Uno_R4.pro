@@ -1,4 +1,4 @@
-update=23/05/2020 18:26:21
+update=09/06/2020 16:24:10
 version=1
 last_client=pcbnew
 [general]
@@ -214,9 +214,9 @@ Enabled=0
 [pcbnew/Layer.F.Adhes]
 Enabled=0
 [pcbnew/Layer.B.Paste]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.F.Paste]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.B.SilkS]
 Enabled=1
 [pcbnew/Layer.F.SilkS]
