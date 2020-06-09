@@ -12,4 +12,6 @@ Kursa darba laikā plānots izveidot Arduino Uno R3 klonu/versiju, pielāgotu un
 
 
 **Progress:**  
--15.05.2020 pabeigta principiālā shēma (finished schematic)
+-15.05.2020 pabeigta principiālā shēma (finished schematic)  
+-27.05.2020 pabeigts PCB dizains (finished PCB design)  
+-09.06.2020 izveidoti GERBER un drill faili (generated GBR and DRL files)
